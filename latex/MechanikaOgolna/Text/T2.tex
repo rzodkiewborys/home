@@ -1,0 +1,91 @@
+\section{Siły i momenty w przestrzeni wektorowej}
+
+\subsubsection*{Iloczyn wektorowy}
+
+\begin{equation}
+    \Vec{c} = \Vec{a} \times \Vec{b} = \begin{vmatrix}
+    \Vec{i} & \Vec{j} & \Vec{k} \\
+    a_x & a_y & a_z \\
+    b_x & b_y & b_z
+    \end{vmatrix}  = \Vec{i}(a_y b_z - a_z b_y) - \Vec{j}(a_x b_z - a_z b_x) + \Vec{k}(a_x b_y - a_y b_x)
+\end{equation}
+
+\begin{equation}
+    \Vec{c} = [a_y b_z - a_z b_y;\ a_z b_x - a_x b_z;\ a_x b_y - a_y b_x]
+\end{equation}
+
+\begin{equation}
+    |\Vec{c}| = |\Vec{a}| |\Vec{b}| \sin\alpha
+\end{equation}
+
+\subsubsection*{Moment siły względem punktu}
+
+Punkt, względem którego liczymy moment siły:
+
+\begin{equation*}
+    O(O_y;\ O_z;\ O_z)
+\end{equation*}
+
+Punkt zaczepienia siły:
+
+\begin{equation*}
+    A(A_y;\ A_z;\ A_z)
+\end{equation*}
+
+Ramię siły:
+
+\begin{equation}
+    \Vec{r} = \Vec{OA} = [A_x - O_x;\ A_y - O_y;\ A_z - O_z]
+\end{equation}
+
+Siła:
+
+\begin{equation*}
+    \Vec{F} = [F_x;\ F_y;\ F_z]
+\end{equation*}
+
+Moment siły względem punktu:
+
+\begin{equation}
+    \Vec{M}_{O,F} = \Vec{r} \times \Vec{F} = \begin{vmatrix}
+    \Vec{i} & \Vec{j} & \Vec{k} \\
+    r_x & r_y & r_z \\
+    F_x & F_y & F_z
+    \end{vmatrix}
+\end{equation}
+
+\subsubsection*{Redukcja układu do punktu}
+
+Siła główna:
+
+\begin{equation}
+    \Vec{F}_0 = \sum \Vec{F}_i = \left[ \sum F_{i,x};\ \sum F_{i,y};\ \sum F_{i,z} \right]
+\end{equation}
+
+Moment główny:
+
+\begin{equation}
+    \Vec{M}_0 = \sum \Vec{r}_i \times \Vec{F}_i + \sum \Vec{M}_j
+\end{equation}
+
+gdzie $i$ - liczba sił skupionych w układzie, $j$ - liczba momentów skupionych w układzie.
+
+\subsubsection*{Warunek równowagi statycznej}
+
+\begin{equation}
+    \begin{cases}
+        \Vec{F}_0 = \Vec{0} \\
+        \Vec{M}_0 = \Vec{0}
+    \end{cases}
+\end{equation}
+
+\begin{equation}
+    \begin{cases}
+        F_{0,x} = 0 \\
+        F_{0,y} = 0 \\
+        F_{0,z} = 0 \\
+        M_{0,x} = 0 \\
+        M_{0,y} = 0 \\
+        M_{0,z} = 0
+    \end{cases}
+\end{equation}

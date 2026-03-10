@@ -1,0 +1,105 @@
+\subsection*{Przykłady}
+\subsubsection*{Przykład 1}
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics{Fig/P1a.png}
+\end{figure}
+
+a) Rozpisz składowe wektora $\Vec{a}$ prowadzącego z punktu $A$ do puntku $B$
+
+\begin{equation}
+    \Vec{a} = \Vec{AB} =  [ B_x - A_x ; B_y - A_y ]
+\end{equation}
+
+\[ \Vec{a} = [ 2 - 5 ; 3 - (-1) ] = [ -3 ; 4 ] \]
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics{Fig/P1b.png}
+\end{figure}
+
+b) Oblicz moduł wektora $\Vec{a}$
+
+\begin{equation}
+    a = \sqrt{ \Vec{a} \cdot \Vec{a} } = \sqrt{ a_x \cdot a_x + a_y \cdot a_y } = \sqrt{ (a_x)^2 + (a_y)^2 }
+\end{equation}
+
+\[ a = \sqrt{ (-3)^2 + 4^2 } = \sqrt{25} = 5 \]
+
+c) Wyznacz wektor jednostkowy (wersor) wektora $\Vec{a}$
+
+\begin{equation}
+    \Vec{e_a} = \frac{\Vec{a}}{a} = \frac{ [ a_x ; a_y ] }{a} = \left[ \frac{a_x}{a} ; \frac{a_y}{a} \right]
+\end{equation}
+
+\[ \Vec{e_a} = \frac{ [ -3 ; 4 ] }{5} = \left[ \frac{-3}{5} ; \frac{4}{5} \right] = [-0.6; 0.8] \]
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics{Fig/P1c.png}
+\end{figure}
+
+\subsubsection*{Przykład 2}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics{Fig/P1d.png}
+\end{figure}
+
+a) Wykaż, że wektor $\Vec{c} = \Vec{AC}$ jest równoważny sumie wektorów $\Vec{a} + \Vec{b} = \Vec{AB} + \Vec{BC}$
+
+\[ \Vec{a} = [ -3 ; 4 ] \]
+\[ \Vec{b} = [ 2 ; 3 ] \]
+\[ \Vec{c} = [ -1 ; 7 ] \]
+
+\begin{equation}
+    \Vec{a} + \Vec{b} = [ a_x + b_x ; a_y + b_y ]
+\end{equation}
+
+\[ \Vec{a} + \Vec{b} = [ -3 + 2 ; 4 + 3 ] = [ -1 ; 7 ] = [ c_x ; c_y ] = \Vec{c} \]
+
+b) Wyznacz rzut wektora $\Vec{b}$ na kierunek wektora $\Vec{a}$. Określ, czy ta składowa wektora $\Vec{b}$ działa zgodnie czy przeciwnie do zwrotu wektora $\Vec{a}$.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics{Fig/P1e.png}
+\end{figure}
+
+\begin{equation}
+    \Vec{a} \cdot \Vec{b} = a_x b_x + a_y b_y = a b \cos\alpha
+\end{equation}
+
+Skalarna wartość rzutu wektora $\Vec{b}$ na kierunek $\Vec{a}$ wynosi $ b\cos\alpha $ i może być dodatnia (przy kącie $\alpha$ ostrym) lub ujemna (przy kącie $\alpha$ rozwartym). Aby ją obliczyć, korzystamy z iloczynu skalarnego wektora $\Vec{b}$ oraz wersora $\Vec{e_a}$ wyznaczającego kierunek i zwrot działania wektora $\Vec{a}$.
+
+\begin{equation}
+    \Vec{e_a} \cdot \Vec{b} = \frac{\Vec{a}}{a} \cdot \Vec{b} = \frac{a}{a} b \cos\alpha = b \cos\alpha
+\end{equation}
+
+\[ \Vec{e_a} \cdot \Vec{b} = [ -0.6 ; 0.8 ] \cdot [ 2 ; 3 ] = (-0.6) \cdot 5 + 0.8 \cdot 4 = \frac{6}{5} = 1.2 \]
+
+Wartość jest dodatnia, a więc kąt pomiędzy wektorami jest dodatni, a zwrot wektora $\Vec{a}$ jest zgodny ze zwrotem rzutu wektora $\Vec{b}$ na ten kierunek. Wektor $\Vec{b_a}$ będący rzutem wektora $\Vec{b}$ na kierunek wektora $\Vec{a}$ wyznaczamy poprzez iloczyn skalarnej wartości $b_a$ i wersora $\Vec{e_a}$
+
+\[ \Vec{b_a} = b_a \cdot \Vec{e_a} = 1.2 \cdot [-0.6; 0.8] = [-0.72; 0.96] \]
+
+c) Wyznacz kąt $\alpha$ między wektorami $\Vec{a}$ i $\Vec{b}$
+
+Korzystając ze znanej już zależności
+
+\[ \Vec{a} \cdot \Vec{b} = a b \cos\alpha \]
+
+wyznaczamy cosinus kąta $\alpha$ jako iloczyn skalarny wersorów $\Vec{e_a}$ i $\Vec{e_b}$
+
+\begin{equation}
+    \cos\alpha = \frac{\Vec{a}\cdot\Vec{b}}{ab} = \frac{\Vec{a}}{a}\cdot\frac{\Vec{b}}{b} = \Vec{e_a}\cdot\Vec{e_b}
+\end{equation}
+
+\[ \Vec{e_b} = \frac{\Vec{b}}{b} = \frac{[2;3]}{\sqrt{2^2+3^2}} = \left[ \frac{2}{\sqrt{13}} ; \frac{3}{\sqrt{13}} \right] \]
+
+\[ \cos\alpha = \Vec{e_a}\cdot\Vec{e_b} = \left[ \frac{-3}{5} ; \frac{4}{5} \right] \cdot \left[ \frac{2}{\sqrt{13}} ; \frac{3}{\sqrt{13}} \right] = \frac{(-3)\cdot 2}{5\cdot\sqrt{13}} + \frac{4 \cdot 3}{5 \cdot \sqrt{13}} \]
+
+\[ \cos\alpha = 0.3328 \]
+
+Wartość kąta wyznaczamy korzystając z funkcji odwrotnej
+
+\[ \alpha = \arccos(0.3328) = \SI{1.2315}{rad} = 1.2315 \cdot \frac{180}{\pi} \deg = 70.56 \deg \]

@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[polish]{babel}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{placeins} % For \FloatBarrier
+\usepackage{siunitx}
+\usepackage{amsmath}
+\numberwithin{equation}{section} % Numeracja rownan
+
+\renewcommand{\arraystretch}{1.5}
+
+\title{Mechanika Ogólna --- materiały do zajęć}
+\author{Paweł Bielski, WIMiO PG}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\input{Text/T1} % Rachunek wektorowy
+\input{Text/P1} \FloatBarrier % Przyklady z rachunku wektorowego
+\newpage
+
+\input{Text/T2} % Rownowaga sil
+\input{Text/Z1} \FloatBarrier % Zadania z redukcji sil
+\newpage
+
+\input{Text/T3} % Srodki ciezkosci
+\input{Text/Z2} \FloatBarrier % Zadania ze srodkow ciezkosci
+\newpage
+
+\input{Text/T4} % Reakcje podporowe
+\input{Text/Z3} \FloatBarrier % Zadania z reakcji podporowych
+\input{Text/Z4} \FloatBarrier % Zadania z sil w kratownicach
+\newpage
+
+%\input{Text/Z5} % Zadania z sil wewnetrznych w belkach
+
+\end{document}
