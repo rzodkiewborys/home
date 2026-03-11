@@ -6,12 +6,10 @@ Dotyczy grup: **OiKM C3**, **PiBJ C2**, **TiL C3**
 
 ## Kontakt z prowadzącym
 
-Zachęcam do komunikacji przez [Discord](https://discord.com/), gdzie zazwyczaj odpowiadam natychmiast. Serwery:
-- OiKM [discord.gg/ShZvmVah5s](https://discord.gg/ShZvmVah5s)
-- PiBJ [discord.gg/ChZ7NJrD5w](https://discord.gg/ChZ7NJrD5w)
-- TiL [discord.gg/zKmDKhKD3U](https://discord.gg/zKmDKhKD3U)
+- Discord: [discord.gg/htZRXdnBc2](https://discord.gg/htZRXdnBc2)
+- e-mail: [pawbiels@pg.edu.pl](mailto:pawbiels@pg.edu.pl)
 
-W poniedziałki, wtorki i czwartki przebywam w pokoju [318](https://campus.pg.edu.pl/room/2353) budynku [30 WIMiO](https://campus.pg.edu.pl/building/31) (dawne WOiO). Na pocztę [pawbiels@pg.edu.pl](mailto:pawbiels@pg.edu.pl) odpowiadam w ciągu kilku dni.
+Zachęcam do komunikacji przez serwer [Discord](https://discord.gg/htZRXdnBc2), gdzie odpowiadam najszybciej. W poniedziałki, wtorki i czwartki przebywam w pokoju [318](https://campus.pg.edu.pl/room/2353) budynku [30 WIMiO](https://campus.pg.edu.pl/building/31) (dawne WOiO). Na pocztę [pawbiels@pg.edu.pl](mailto:pawbiels@pg.edu.pl) odpowiadam zwykle w ciągu kilku dni.
 
 ## Kursy na [enauczanie.pg.edu.pl](https://enauczanie.pg.edu.pl)
 

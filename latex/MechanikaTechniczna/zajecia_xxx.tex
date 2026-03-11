@@ -1,0 +1,86 @@
+\section*{Dynamika}
+
+    \subsection*{Energia i praca w ruchu postępowym i obrotowym}
+    
+    Na bęben o masie 80 kg i średnicy 60 cm nawinięta jest lina, a do niej przymocowany jest obiekt o masie 40 kg. Bęben jest zablokowany za pomocą klocka hamulcowego znajdującego się na obwodzie walca. Hamulec zostaje zwolniony na 6 sekund, a następnie bęben zostaje ponownie zablokowany. Oblicz, jakie będzie przyspieszenie kątowe bębna oraz całkowita energia kinetyczna układu po 6 sekundach od zwolnienia hamulca. Ile metrów liny zostanie rozwinięte już po dociśnięciu hamulca, jeżeli jest on w stanie działać na walec z siłą 15 kN, a współczynnik tarcia klocka hamulcowego o bęben wynosi 0.8?
+    
+    Siła ciężkości obiektu na linie wynosi
+    \begin{equation}
+        G = m_o g = \SI{40}{kg} \cdot \SI{10}{m/s^2} = \SI{400}{N} 
+    \end{equation}{}
+    
+    Biegunowy moment bezwładności walca wynosi $m_b r^2/2$, a więc
+    \begin{equation}
+        I = \frac{m_b r^2}{2} = \frac{\SI{80}{kg} \cdot (\SI{0.3}{m})^2}{2} = \SI{3.6}{kgm^2}
+    \end{equation}{}
+    
+    Siła wypadkowa działająca na obiekt dana jest wzorem
+    \begin{equation}
+        F_{tot} = G-F = m_o a \xrightarrow{}  a = \frac{G-F}{m_o}
+    \end{equation}{}
+    
+    Przyspieszenie obiektu sprzężone jest z przyspieszeniem rozwijania się liny (dowolnego punktu na obwodzie walca), a więc z przyspieszeniem kątowym bębna
+    \begin{equation}
+        a = \varepsilon r
+    \end{equation}{}
+    
+    Z kolei przyspieszenie kątowe zależy od momentu siły na bębnie oraz od jego momentu bezwładności
+    \begin{equation}
+        M = Fr = I \varepsilon \xrightarrow{} \varepsilon = \frac{Fr}{I}
+    \end{equation}{}
+    
+    Powyższe zależności można powiązać
+    \begin{equation}
+        a = \frac{G-F}{m_o} \xrightarrow{} a = \varepsilon r \xrightarrow{} \varepsilon r = \frac{G-F}{m_o}
+    \end{equation}{}
+    
+    i dalej
+    \begin{equation}
+        \varepsilon r = \frac{G-F}{m_o} \xrightarrow{} \varepsilon = \frac{Fr}{I} \xrightarrow{} \frac{Fr}{I}r = \frac{G-F}{m_o}
+    \end{equation}{}
+    
+    Siła w linie wynosi
+    \begin{equation}
+        F = \frac{G}{m_o \left( \frac{r^2}{I} + \frac{1}{m_o} \right)} = \frac{\SI{400}{N}}{\SI{40}{kg} \left( \frac{(\SI{0.3}{m})^2}{\SI{3.6}{kg m^2}} + \frac{1}{\SI{40}{kg}} \right) } = \SI{200}{N}
+    \end{equation}{}
+    
+    Wobec tego przyspieszenie działające na obiekt na linie wynosi
+    \begin{equation}
+        a = \frac{G-F}{m_o} = \frac{\SI{400}{N} - \SI{200}{N}}{\SI{40}{kg}} = \SI{5}{m/s^2}
+    \end{equation}{}
+    
+    a przyspieszenie kątowe bębna
+    \begin{equation}
+        \varepsilon = \frac{a}{r} = \frac{\SI{5}{m/s^2}}{\SI{0.3}{m}} = \SI{16.67}{rad/s^2}
+    \end{equation}{}
+    
+    Prędkość kątowa bębna po 6 sekundach to
+    \begin{equation}
+        \omega = \varepsilon t = \SI{16.67}{rad/s^2} \cdot \SI{6}{s} = \SI{100}{rad/s}
+    \end{equation}{}
+    
+    a prędkość obiektu na linie
+    \begin{equation}
+        v = at = \SI{5}{m/s^2} \cdot \SI{6}{s} = \SI{30}{m/s}
+    \end{equation}{}
+    
+    Całkowita energia kinetyczna układu to suma energii ruchu postępowego obiektu na linie (środek ciężkości obiektu się porusza, ale jego oś się nie obraca) oraz energii ruchu obrotowego bębna (środek ciężkości bębna się nie porusza, ale oś ulega obrotowi)
+    \begin{equation}
+        E_k = E_{k,o} + E_{k,b} = \frac{m_o v^2}{2} + \frac{I \omega^2}{2}
+    \end{equation}{}
+    
+    \begin{equation}
+        \frac{m_o v^2}{2} + \frac{I \omega^2}{2} = \frac{\SI{40}{kg}(\SI{5}{m/s})^2}{2} + \frac{\SI{3.6}{kg m^2} (\SI{100}{rad/s^2})^2}{2} = \SI{18}{kJ} + \SI{18}{kJ} = \SI{36}{kJ}
+    \end{equation}{}
+    
+    Klocek hamulcowy musi wykonać pracę równą energii kinetycznej układu, aby zatrzymać układ. Dociskając z siłą 15 kN i współczynnikiem tarcia 0.8 jest on w stanie wygenerować stałą siłę tarcia
+    \begin{equation}
+        T = \mu N = 0.8 \cdot \SI{15}{kN} = \SI{12}{kN}
+    \end{equation}{}
+    
+    Aby zatrzymać układ, siła ta musi wykonać pracę na pewnej odległości $l$
+    \begin{equation}
+        \Delta E_k = L = \int T dl = Tl \xrightarrow{} l = \frac{E_k}{T} = \frac{\SI{36}{kJ}}{\SI{12}{kN}} = \SI{3}{m}
+    \end{equation}{}
+    
+    Jest to droga, którą wykona punkt na obwodzie bębna w trakcie hamowania, a więc długość liny rozwiniętej od rozpoczęcia hamowania do zatrzymania bębna.

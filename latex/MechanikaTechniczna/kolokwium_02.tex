@@ -1,0 +1,41 @@
+\subsection{Zadanie nr 1}
+
+\subsubsection*{Treść}
+
+W chwili $t = \SI{1.5}{s}$:
+\begin{enumerate}
+    \item Narysuj układ wektorów prędkości i przyspieszenia,
+    \item Wyznacz składową normalną i styczną przyspieszenia,
+    \item Określ krzywiznę toru.
+\end{enumerate}
+
+Ruch punktu dany jest równaniem parametrycznym:
+\begin{align*}
+    \Vec{r} &= [ x(t), y(t) ] \\
+    x(t) &= \sin(\pi t) \\
+    y(t) &= t^2
+\end{align*}
+
+\subsubsection*{Rozwiązanie}
+
+Wyznaczamy wektory prędkości i przyspieszenia przez obliczenie pochodnych po czasie wektora położenia:
+
+\begin{align*}
+    x(t) &= \sin(\pi t) \\
+    v_x(t) &= \dot x(t) = \pi \cos(\pi t) \\
+    a_x(t) &= \dot v_x(t) = - \pi^2 \sin(\pi t) = -9.8696 \sin(\i t)
+\end{align*}
+
+\begin{align*}
+    y(t) &= t^2 \\
+    v_y(t) &= \dot y(t) = 2t \\
+    a_y(t) &= \dot v_y(t) = 2
+\end{align*}
+
+Oznacza to, że w chwili $t = \SI{1.5}{s}$ wektory prędkości i przyspieszenia mają postać:
+
+\begin{align*}
+    \vec v(\SI{1.5}{s}) &= \left[ \pi \cos\left( \dfrac{3}{2} \pi \right), 2 \cdot 1.5 \right] = [0, 3] \ \si{m/s} \\
+    \vec a(\SI{1.5}{s}) &= \left[ -\pi^2 \sin\left( \dfrac{3}{2} \pi \right), 2 \right] = [ -9.8696, 2] \ \si{m/s^2}
+\end{align*}
+
